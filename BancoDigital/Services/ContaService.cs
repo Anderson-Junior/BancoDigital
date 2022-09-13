@@ -19,6 +19,11 @@ namespace BancoDigital.Services
             return await _contaRepository.AddConta(conta);
         }
 
+        public async Task<Conta> Depositar(Conta conta)
+        {
+            return await _contaRepository.Depositar(conta);
+        }
+
         public async Task<List<Conta>> GetAll()
         {
             return await _contaRepository.GetAll();
@@ -27,6 +32,11 @@ namespace BancoDigital.Services
         public async Task<Conta> GetByConta(string conta)
         {
             return await _contaRepository.GetByConta(conta);
+        }
+
+        public async Task<Conta> Sacar(Conta conta)
+        {
+            return await _contaRepository.Sacar(conta);
         }
     }
 }

@@ -1,6 +1,9 @@
 using BancoDigital.Data;
+using BancoDigital.Mapper;
 using BancoDigital.Repositories;
 using BancoDigital.Services;
+using BancoDigital.Validators;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -32,7 +35,11 @@ namespace BancoDigital
             services.AddScoped<IContaRepository, ContaRepository>();
             services.AddScoped<IContaService, ContaService>();
 
-            services.AddControllers();
+            services.AddControllers()
+                .AddFluentValidation(config => config.RegisterValidatorsFromAssemblyContaining<AddContaValidator>());
+
+            services.AddAutoMapper(typeof(AutoMapperConfig));
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "BancoDigital", Version = "v1" });

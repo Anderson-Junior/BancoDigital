@@ -15,16 +15,18 @@ namespace BancoDigital.Entities
         public string TipoConta { get; set; }
         public decimal Saldo { get; set; }
         public DateTime CriadaEm { get; set; }
+        public DateTime AtualizadaEm { get; set; }
 
         public Conta() {}
 
-        public Conta(string numeroConta, string numeroAgencia, string tipoConta, decimal saldo, DateTime criadaEm)
+        public Conta(string numeroConta, string numeroAgencia, string tipoConta, decimal saldo, DateTime criadaEm, DateTime atualizadaEm)
         {
             NumeroConta = numeroConta;
             NumeroAgencia = numeroAgencia;
             TipoConta = tipoConta;
             Saldo = saldo;
             CriadaEm = criadaEm;
+            AtualizadaEm = atualizadaEm;
         }
     }
 }

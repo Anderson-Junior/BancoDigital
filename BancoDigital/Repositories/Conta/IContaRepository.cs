@@ -9,5 +9,7 @@ namespace BancoDigital.Repositories
         Task<List<Conta>> GetAll();
         Task<Conta> GetByConta(string numeroConta);
         Task<Conta> AddConta(Conta conta);
+        Task<Conta> Depositar(Conta conta);
+        Task<Conta> Sacar(Conta conta);
     }
 }

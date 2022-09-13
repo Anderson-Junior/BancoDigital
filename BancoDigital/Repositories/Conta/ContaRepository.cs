@@ -33,5 +33,19 @@ namespace BancoDigital.Repositories
 
             return conta;
         }
+
+        public async Task<Conta> Depositar(Conta conta)
+        {
+            _context.Contas.Update(conta);
+            await _context.SaveChangesAsync();
+            return conta;
+        }
+
+        public async Task<Conta> Sacar(Conta conta)
+        {
+            _context.Contas.Update(conta);
+            await _context.SaveChangesAsync();
+            return conta;
+        }
     }
 }
