@@ -7,11 +7,11 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
-namespace BancoDigital.Data.Migrations
+namespace BancoDigital.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220913005439_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20220914151723_InitialMigration")]
+    partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -26,6 +26,9 @@ namespace BancoDigital.Data.Migrations
                     b.Property<Guid>("ContaId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
+
+                    b.Property<DateTime>("AtualizadaEm")
+                        .HasColumnType("timestamp without time zone");
 
                     b.Property<DateTime>("CriadaEm")
                         .HasColumnType("timestamp without time zone");

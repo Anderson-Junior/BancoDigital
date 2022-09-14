@@ -17,7 +17,7 @@ namespace BancoDigital.Entities
         public DateTime CriadaEm { get; set; }
         public DateTime AtualizadaEm { get; set; }
 
-        public Conta() {}
+        public Conta() { }
 
         public Conta(string numeroConta, string numeroAgencia, string tipoConta, decimal saldo, DateTime criadaEm, DateTime atualizadaEm)
         {
