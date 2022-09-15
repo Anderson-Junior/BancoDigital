@@ -23,10 +23,13 @@ namespace BancoDigital.Controllers
         }
 
         [HttpGet("/ListarContas")]
-        public async Task<IEnumerable<ContaViewModel>> GetAllContas()
+        public async Task<IActionResult> GetAllContas()
         {
             var contas = await _service.GetAll();
-            return _autoMapper.Map<IEnumerable<ContaViewModel>>(contas);
+            if (contas == null)
+                return NotFound("Nenhuma conta cadastrada.");
+
+            return Ok(_autoMapper.Map<IEnumerable<ContaViewModel>>(contas));
         }
 
         [HttpGet("/PesquisarConta/{numeroConta}")]

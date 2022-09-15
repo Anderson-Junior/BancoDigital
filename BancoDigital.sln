@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32802.440
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BancoDigital", "BancoDigital\BancoDigital.csproj", "{0DD32BF8-B81F-438B-8FB3-B1A279C829C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BancoDigital", "BancoDigital\BancoDigital.csproj", "{0DD32BF8-B81F-438B-8FB3-B1A279C829C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BancoDigital.Testes", "BancoDigital.Testes\BancoDigital.Testes.csproj", "{630D2FE2-931B-4889-B833-6C71E43798DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{0DD32BF8-B81F-438B-8FB3-B1A279C829C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DD32BF8-B81F-438B-8FB3-B1A279C829C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DD32BF8-B81F-438B-8FB3-B1A279C829C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{630D2FE2-931B-4889-B833-6C71E43798DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{630D2FE2-931B-4889-B833-6C71E43798DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{630D2FE2-931B-4889-B833-6C71E43798DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{630D2FE2-931B-4889-B833-6C71E43798DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
