@@ -3,7 +3,7 @@
 > API em C# com .NET Core que simula algumas funcionalidades de um banco digital.
 
 # Usage
-### windows
+### Windows
 * .NET Core 5
 * API REST
 * Fluent Validation
