@@ -41,5 +41,5 @@ sa12345678
 
 ## Futuras melhorias
 
-* Aumentar a conbertura de testes unitários.
-* Implementar GraphQL
+* Aumentar a conbertura de testes unitários;
+* Implementar GraphQL;
