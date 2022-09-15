@@ -19,7 +19,7 @@ Necessário executar o comando abaixo para criação da imagem:
 ```sh
 docker-compose up
 ```
-Credenciais para acessa à instância do PostgreSQL:
+Credenciais para acessar à instância do PostgreSQL:
 
 ## PostgreSQL
 Host:
